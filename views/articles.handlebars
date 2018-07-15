@@ -1,0 +1,29 @@
+ 
+ <div>
+ 
+ {{#each articles}}
+
+
+
+<ul>
+    <li class="list-group-item">{{title}}</li>
+    <li class="list-group-item">{{description}}</li>
+    <li class="list-group-item"><a href={{url}}>Read More Here</a></li>
+
+
+<ul>
+ {{#each comments}}
+
+<li class="list-group-item">{{body}}</li>
+
+{{/each}}
+</ul>
+
+
+
+</ul>
+
+
+{{/each}}
+
+</div>
