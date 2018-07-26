@@ -36,7 +36,8 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost:27017/news");
+// mongoose.connect("mongodb://localhost:27017/news");
+mongoose.connect("jeffreykorengold@gmail.com:Goobis12@ds253831.mlab.com:53831/heroku_m8sv3k43");
 
 // Routes
 
