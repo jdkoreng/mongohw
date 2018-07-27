@@ -4,6 +4,7 @@ var logger = require("morgan");
 var mongoose = require("mongoose");
 const scrapey = require("./services/scrapey");
 const exphbs = require('express-handlebars');
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://heroku_m8sv3k43:2ahm95nkp411l99suuq98uuesf@ds253831.mlab.com:53831/heroku_m8sv3k43";
 
 
 // Our scraping tools
@@ -37,7 +38,8 @@ app.use(express.static("public"));
 
 // Connect to the Mongo DB
 //mongoose.connect("mongodb://localhost:27017/news");
- mongoose.connect("mongodb://heroku_m8sv3k43:2ahm95nkp411l99suuq98uuesf@ds253831.mlab.com:53831/heroku_m8sv3k43");
+mongoose.Promise = Promise;
+ mongoose.connect(MONGODB_URI);
 
 // Routes
 
