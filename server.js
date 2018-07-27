@@ -37,7 +37,7 @@ app.use(express.static("public"));
 
 // Connect to the Mongo DB
 //mongoose.connect("mongodb://localhost:27017/news");
- mongoose.connect("heroku_m8sv3k43:2ahm95nkp411l99suuq98uuesf@ds253831.mlab.com:53831/heroku_m8sv3k43");
+ mongoose.connect("mongodb://heroku_m8sv3k43:2ahm95nkp411l99suuq98uuesf@ds253831.mlab.com:53831/heroku_m8sv3k43");
 
 // Routes
 
